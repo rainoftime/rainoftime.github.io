@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+
+var browser = {
+   versions: function() {
+   var u = navigator.userAgent,
+   ua = navigator.userAgent.toLowerCase();
+   return { //移动终端浏览器版本信息
+       trident: u.indexOf('Trident') > -1, //IE内核
+       presto: u.indexOf('Presto') > -1, //opera内核
+       webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+       gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+       mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+       ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+       android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+       iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+       iPad: u.indexOf('iPad') > -1, //是否iPad
+       webApp: u.indexOf('Safari') == -1 ,//是否web应该程序，没有头部与底部
+       wechat:ua.match(/MicroMessenger/i) == "micromessenger",//微信
+       weibo:ua.match(/WeiBo/i) == "weibo",//微博
+       qq:ua.match(/QQ/i) == "qq"//qq
+   };
+   }(),
+   language: (navigator.browserLanguage || navigator.language).toLowerCase()
+};
+
+function testmobile() {
+   if (browser.versions.mobile) {
+      var info = document.getElementById('info');
+      info.style.clear = 'both';
+
+      var container = document.getElementById('container');
+      container.style.width = '100%';
+
+      var sig = document.getElementById('sig');
+      sig.style.display = 'none';
+   }
+};
+
+
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="main">
+	
+        <h1>Advisories</h1>
+    <div id="content">
+<ol style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14739">CVE-2017–14739</a>:
+	ImageMagick 7.0.7–4 mishandles failed memory allocation, which allows remote
+	attackers to cause a denial of service.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14952">CVE-2017–14952</a>:
+	International Components for Unicode (ICU) for C/C++ through 59.1 contains a
+	double free that allows remote attackers to execute arbitrary code.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15096">CVE-2017–15096</a>:
+	GlusterFS in versions prior to 3.10 contains a null pointer dereference that
+	may cause denial of service.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16892">CVE-2017–16892</a>:
+	Bftpd 4.6 contains a memory leak which occurs if a mal-crafted sequence of FTP
+	requests are received.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000445">CVE-2017–1000445</a>:
+	ImageMagick 7.0.7–1 and older version are vulnerable to null pointer
+	dereference in the MagickCore component and might lead to denial of
+	service.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20786">CVE-2018–20786</a>:
+	libvterm through 0+bzr726, as used in Vim and other products, mishandles certain
+	out-of-memory conditions, leading to a denial of service (application crash),
+	related to screen.c, etc.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13238">CVE-2019–13238</a>:
+	In Bento4 1.5.1.0, a memory allocation failure is unhandled in
+	Core/Ap4SdpAtom.cpp and leads to crashes.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13959">CVE-2019–13959</a>:
+	In Bento4 1.5.1–627, AP4 DataBuffer::Set­DataSize does not handle
+	reallocation fail- ures, leading to a memory copy into a NULL pointer.</li>
+
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13960">CVE-2019–13960</a>:
+	In libjpeg-turbo 2.0.2, a large amount of memory can be used during processing
+	of an invalid progressive JPEG image containing incorrect width and height
+	values in the image header.</li>
+   <li> readelf: CVE-2018-20623 
+   </li>
+
+   <li> nm: CVE-2019-9070
+   </li>
+
+   <li> libjpg: CVE-2019-13960
+   </li>
+
+   <li> vim: CVE-2018-20786
+   </li>
+
+   <li> libsass:
+     <a href= https://github.com/sass/libsass/issues/3056">issue3056</a>
+   </li>
+
+   <li> yaml-cpp: 
+     <a href="https://github.com/jbeder/yaml-cpp/issues/818">issue818</a>
+   </li>
+   <li> libjpeg: 
+      <a href="https://github.com/thorfdbg/libjpeg/issues/24">issue24</a>
+   </li>
+<li> libpng:
+      <a href="https://github.com/glennrp/libpng/issues/341">issue341</a>
+   </li>
+</ol>
+
+<!-- by Texy2! -->      </div>
+    </div>
+  </div>
+</body>
+</html>
