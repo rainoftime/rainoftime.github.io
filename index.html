@@ -1,8 +1,7 @@
-<!-- ?xml version="1.0" encoding="UTF-8"?--> 
 
 <html xmlns="http//www.w3.org/1999/xhtml"><head> 
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <meta name="description" content="hello world">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Yao Peisen's homepage">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head> 
 
@@ -10,42 +9,48 @@
 
 <div class="content">
 
-(Personal information hidden for doulbe-blind review)
-
-<!-- 
+<td valign="top">
+<p>
+  <a href="index_cn.html">中文版</a>
+</p>
+</td>
 
 <h3>Yao Peisen</h3>
 <dl>
    <dt>Email:</dt>
-   <dd>rainoftime - at - gmail.com</dd>
+   <dd>rainoftime - at - gmail - dot- com</dd>
+    <dd>pyao - at - cse - dot- ust - dot - hk</dd>
 </dl>
-
 <dt>Research Interests</dt> 
 <ul>
     <li class="item"<strong>Programm Analysis and Verification</strong><br>
-    Alias analysis, numeric domains
+    Alias analysis, numeric domains, concurrency
     </li>
     <li class="item"<strong>Automated Reasoning</strong><br>
-    SAT/SMT solving, symbolic abstraction
+    Satisfiability checking, optimization, synthesis
     </li>
     <li class="item"<strong>Security</strong><br>
-    Symbolic execution, fuzz testing
+    Language-based security, symbolic execution, fuzzing
     </li>
 </ul>
-
 <dt>Publications</dt>
 <ol>
-  <li class="item"<strong>Fast Bit-Vector Satisfiability. Peisen Yao, Qingkai Shi, Heqing Huang, Charles Zhang. In 29th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'20)</strong><br>
+    <li class="item"<a>Fuzzing SMT Solvers via Two-Dimentional Input Space Exploration. Peisen Yao, Heqing Huang, Wensheng Tang, Qingkai Shi, Rongxin Wu, Charles Zhang. In 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2021)</a><br>
   </li>
-  <li class="item"<strong>Pangolin: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction. Heqing Huang, Peisen Yao, Rongxin Wu, Qingkai Shi, Charles Zhang. In 41st IEEE Symposium on Security and Privacy (S&P'20)</strong><br>
+  <li class="item"<a href="/files/PLDI2021Fusion">Path-Sensitive Sparse Analysis without Path Conditions. Qingkai Shi, <strong>Peisen Yao*</strong>, Rongxin Wu*, Charles Zhang. In 42nd ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2021)</a><br>
   </li>
-  <li class="item"<strong> In submissions... </strong><br>
+  <li class="item"<a>Canary: Practical Static Detection of Inter-Thread Value-Flow Bugs. Yuandao Cai, <strong>Peisen Yao*</strong>, Charles Zhang. In 42nd ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2021)</a><br>
+  </li> 
+<li class="item"<a>Fast Bit-Vector Satisfiability. <strong>Peisen Yao</strong>, Qingkai Shi, Heqing Huang, Charles Zhang. In 29th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2020)</a><br>
+  </li>
+  <li class="item"<a href="/files/SP2020Pangolin.pdf">Pangolin: Incremental Hybrid Fuzzing with Polyhedral Path Abstraction. Heqing Huang, <strong>Peisen Yao</strong>, Rongxin Wu, Qingkai Shi, Charles Zhang. In 41st IEEE Symposium on Security and Privacy (S&P 2020)</a><br>
+  </li>
+  <li class="item"<a> In submissions... </a><br>
   </li>
 </ol>
-
 <dt>Projects</dt>
 <ul>
-  <li><a href="http://www.sourcebrella.com">Pinpoint Static Analyzer</a>  
+  <li><a href="http://www.sourcebrella.com">Pinpoint/Fusion Static Analyzer</a>  
 	  <p
 	  style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">Pinpoint
 	  is an industrial-strength next-generation automated bug finding tool through
@@ -54,16 +59,23 @@
 	  and Python. Many of the detected bugs have been assigned <a href="cve.html">CVE IDs</a> due to their security impacts. 
     </p>
    </li> 
-   <li><a href ="files/HybridFuzz-Preprint.pdf">Pangolin</a>
+   <li><a href="">Pangolin</a>
        <p
 	style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
    Pangolin is an industrial-strength fuzzing system that aims to find software vulnerabilities through fuzz testing and symbolic execution.  
    We propose incremental techniques to reduce the cost of random input mutation and SMT solving (<a href ="files/HybridFuzz-Preprint.pdf">S&P'20</a>)
       </p>
   </li>
+  <li><a href="">SMTFuzz</a>   
+   <p
+style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+ SMTFuzz is a fuzzing framework for first-order theorem provers and SMT solvers.
+It has found 1000+ bugs in CVC4 and Z3, two state-of-the-art SMT solvers.
+Besides, it finds hundreds of bugs in other solvers/provers, such as Yices2, Boolector, OpenSMT, SPASS, and Vampire.
+    </p>
+   </li> 
 
 </ul>
-
 <dt>Reviewer/Sub-/Co-reviewer</dt>
 <ul>
    <li class="item"<strong>VMCAI'17</strong><br>
@@ -73,18 +85,12 @@
   <li class="item"<strong>FSE'19, ISSTA'19</strong><br>
    </li>
 </ul>
-
 <dt>Teaching</dt>
 <ul>
    <li class="item"<strong>COMP4632: Practicing CyberSecurity: Attacks and Counter-measures</strong><br>
    </li>
+  <li class="item"<strong>COMP3201: Java Programming</strong><br>
 </ul>
-
-
-<dt><a href="cve.html">CVE/Bugs in Common Sofware</a></dt>
-
-COMMENT END HERE
--->
 
 <dt>Misc</dt>
 <ul>
@@ -98,7 +104,8 @@ COMMENT END HERE
    </li>
    <li class="item"<strong><a href="reading.html">Some interesting papers</a></strong><br>
    </li>
+
 </ul>
 
-</body>
 
+</body>
