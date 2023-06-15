@@ -336,71 +336,96 @@
     <a name="software"></a>
     <h3>Software</h3>
     <ul>
-        <li><a>Static Analysis, Static Vulnerability Detection</a> (<a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21b</a>,
+        <li>Program Analysis and Verification
+            <ul>
+                <li class="item">
+                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+                        <a href="https://www.sourcebrella.com/">Pinpoint</a>: An SMT-based, industrial-strength static analysis framework (<a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21b</a>,
                         <a href="./files/ASE21TransCode.pdf">ASE'21</a>,
-                        <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21a</a>, <a href="">USENIX Security'23</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21a</a>,
+                         <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21b</a>, 
                         <a href="./files/ICSE22Wit.pdf">ICSE'22</a>,
                         <a href="./files/OOPSLA22-FLARE.pdf">OOPSLA'22a</a>,
-                        <a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>..)
-            <ul>
-                <li class="item">
-                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-                        <a href="https://www.sourcebrella.com/">Pinpoint</a>: an industrial-strength
-                        next-generation automated bug finding tool through
-                        static analysis. <br>
-                        It has found <a href="https://fusion-scan.github.io/">hundreds of bugs</a> in many mature and fundamental open-source projects, including Linux
-                        Kernel, MySQL, Firefox, HBase, Apache, Git, Python, Memcached, OpenSSL, Redis, Tmux, Vim,
+                         <a href="">USENIX Security'23</a>,
+                        <a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>...) <br>
+                            <ul>
+                              <li class="item">It has found <a href="https://fusion-scan.github.io/">hundreds of bugs</a> in many mature and fundamental open-source projects, including Linux
+                        Kernel, FreeBSD, MySQL, Firefox, HBase, OpenSSL, PostgreSQL, MariaDB, FFmpeg, Apache HTTPd,  Git, Python, Memcached, OpenSSL, Redis, Tmux, Vim,
                         Mariadb, and many others.
-                    </p>
-                </li>
-
-                 <li>
-                      <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-                    <a href="">Canary</a>: a static analysis framework for concurrent programs. <br>
-                    It uncovers 200+ unique and confirmed concurrency bugs (dead locks, double locking, concurrent UAF, etc) from a broad spectrum of impactful systems, including OpenSSL, Linux Kernel, PostgreSQL, MariaDB, FFmpeg, Apache HTTPd, and FreeBSD.
-                      </p>
+                              </li>    
+                              <li>
+                                   It has been successfully commercialized at Sourcebrella Inc, which was acquired by Ant Group
+                              </li>    
+                            </ul>
+                   
                  </li>
 
-            </ul>
-        </li>
-        <li><a> Dynamic Analysis, Fuzz Testing</a> (<a href="files/HybridFuzz-Preprint.pdf">S&P'20</a>,  <a
+
+                
+              </li>
+
+                <li class="item">
+                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+                        <a href="">Pangolin</a>: A fuzzing framework for general-purpose programs (<a href="files/HybridFuzz-Preprint.pdf">S&P'20</a>, <a href="files/HybridFuzz-Preprint.pdf">S&P'22</a>, <a href="">TDSC'23</a>)
+                             <ul>
+                              <li class="item">A partial of detected vulnerabilities in open-source projects can be found <a href="https://outstanding-hydrogen-2d1.notion.site/Trophies-aef45e1245a64528bd8ec111b475e03b">here</a><br>
+                              </li>
+                              <li class="item">We received the Google Research Paper Reward and two Huawei Distinguished Collaborator Awards for deploying our fuzzers
+                              </li>        
+                            </ul>
+                    </p>
+                </li>
+
+                <li class="item">
+                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+                        <a href="">SMTFuzz</a>: A fuzzing framework for validating SMT solvers (<a
                             href="https://dl.acm.org/doi/abs/10.1145/3468264.3468540">ESEC/FSE'21</a>, <a
-                            href="https://dl.acm.org/doi/10.1145/3460319.3464803">ISSTA'21</a>, <a href="files/HybridFuzz-Preprint.pdf">S&P'22</a>)
+                            href="https://dl.acm.org/doi/10.1145/3460319.3464803">ISSTA'21</a>)
+
+                            <ul>
+                              <li class="item">It has found <a href="https://smtfuzz.github.io/">1000+ bugs</a> in several state-of-the-art SMT solvers and first-order theorem provers, such as Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, and Vampire<br>
+                              </li>
+                              <li class="item">You may try a simplified implementation of the random formula generator by "pip install smtfuzz"
+                              </li>        
+                            </ul>
+
+
+                    </p>
+                </li>
+               
+                        
+                <li class="item">
+                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+                        <a href="">EqDAC</a>: An equivalence checker for verifying data constraint equivalence
+                        </a> (<a href="./files/ICSE23EqDAC.pdf">ICSE'23</a>)
+                    </p>
+
+                            <ul>
+                              <li class="item">It has been deployed in Ant Group, 
+                        a global FinTech company with 1 billion activeusers.<br>
+                              </li>
+                              <li class="item">It is available at <a href="https://github.com/ZJU-Automated-Reasoning-Group/EqDACTool">GitHub</a>
+                              </li>        
+                            </ul>
+
+                </li>
+            </ul>
+            <br>
+
+           <li>Program Synthesis and Automated Reasoning
+                
             <ul>
                 <li class="item">
                     <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-                        <a href="">Pangolin and Beacon</a>: static analysis guided hybrid fuzzing (deployed in Huawei) and directed greybox fuzzing (available at <a href="https://hub.docker.com/r/yguoaz/beacon">dockerhub</a>). 
-                        <br> A partial of detected vulnerabilities in open-source projects can be found <a href="https://outstanding-hydrogen-2d1.notion.site/Trophies-aef45e1245a64528bd8ec111b475e03b">here</a>. <br>
-                        We received the Google Research Paper Reward and two Huawei Distinguished Collaborator Awards for deploying our fuzzers.
-                    </p>
-                </li>
-
-                <li class="item">
-                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-                        <a href="">SMTFuzz</a>: a framework for testing/fuzzing SMT sovlers
-                            <br> It has found <a href="https://smtfuzz.github.io/">1000+ bugs</a> in several state-of-the-art SMT solvers and first-order theorem provers, such as Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, and Vampire.
-                           <br> (You may try a simplified implementation of the random formula generator by `pip install smtfuzz`</a>.)
-
-                    </p>
-                </li>
-            </ul>
-        </li>
-
-        <li><a> Program Verification, Model Checking</a> (<a href="">ICSE 2023</a>)
-                        <ul>
-                <li class="item">
-                    <p style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-                        <a href="">EqDAC</a>: an equivalence checker for verifying data constraint equivalence, which has been deployed in Ant Group, 
-                        a global FinTech company with 1 billion activeusers. 
-                        <br> EqDAC is available at <a href="https://github.com/ZJU-Automated-Reasoning-Group/EqDACTool">GitHub</a>
-                    </p>
-                </li>
+                    <a href="">Cres</a>: Program synthesis for code optimization [<a href="./files/OOPSLA22Cres.pdf">OOPSLA'22b</a>
+                <img src="figs/award.gif" width="18" alt="">] and  code search [<a href="">ECOOP'23</a>] 
+                 </li>
+                 <li><a href="">Arlib</a>: A library for playing with various automated reasoning tasks, such as model counting, model sampling, quantifier instantiation, Optimization Modulo Theory solving, etc.
+                     
+                 </li>
             </ul>
 
-        </li>
-
-
-
+           </li>
     </ul>
 
     <hr noShade size=3.5>
