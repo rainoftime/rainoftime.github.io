@@ -1,0 +1,83 @@
+h1 {
+  font-weight: bold;
+  color: #2980B9;
+  font-family: 'Georgia',sans serif;
+}
+
+body {
+  font-family: 'Georgia', serif;
+}
+
+span.alert {
+  color: #D00000;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+}
+
+div.urgent {
+  font-size: 18px;
+  color: #D00000;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+h2 {
+  font-weight: bold;
+  color: #2980B9;
+  font-family: 'Georgia', serif;
+}
+
+
+a:link {
+    color: #FF6300;
+}
+a:visited {
+    color: #FF9900;
+}
+table.alt-color {
+    border-collapse: collapse;
+    border: 1px solid #E0E0E0;
+}
+table.alt-color tr {
+}
+table.alt-color td {
+    padding: 3px 20px;
+}
+table.alt-color th {
+    background: #000000;
+}
+table.alt-color tr:nth-child(even) {
+    background: #FFFFFF;
+}
+
+table.alt-color tr:nth-child(odd) {
+    background: #F9F9F9;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+}
+pre.code {
+    background: #EFEFEF;
+}
+div.note {
+    width: 75%;
+    margin: auto;
+    border: 2px solid #D00000;
+    padding: 5px 5px 5px 5px;
+}
+span.tt {
+    font-family: monospace;
+}
+
+#menu a:link, #menu a:visited {
+  display: block;
+  background-color: #C0C0C0;
+  color: #000000;
+  padding: 3px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu a:hover{
+  background-color: #FF6300;
+  color: #FFFFFF;
+}
