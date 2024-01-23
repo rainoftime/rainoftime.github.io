@@ -9,14 +9,14 @@ body {
 }
 
 span.alert {
-  color: #D00000;
+  color: #0000FF;
   font-style: italic;
   font-family: 'Georgia', serif;
 }
 
 div.urgent {
   font-size: 18px;
-  color: #D00000;
+  color: #0000FF;
   font-weight: bold;
   font-family: 'Georgia', serif;
 }
@@ -29,10 +29,10 @@ h2 {
 
 
 a:link {
-    color: #FF6300;
+    color: #0000FF;
 }
 a:visited {
-    color: #FF9900;
+    color: #0000FF;
 }
 table.alt-color {
     border-collapse: collapse;
@@ -70,14 +70,10 @@ span.tt {
 
 #menu a:link, #menu a:visited {
   display: block;
-  background-color: #C0C0C0;
-  color: #000000;
+  background-color: #0000FF;
+  color: #0000FF;
   padding: 3px;
   text-decoration: none;
   font-weight: bold;
 }
 
-#menu a:hover{
-  background-color: #FF6300;
-  color: #FFFFFF;
-}
