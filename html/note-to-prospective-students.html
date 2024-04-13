@@ -1,46 +1,102 @@
-<html xmlns="http//www.w3.org/1999/xhtml"><head> 
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <title>students</title> 
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J23RK0R02"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-2J23RK0R02');
+    </script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-</head> 
+  </head>
+  <body>
 
-<body>
-
-<div class="content">
-
-
-<h2><strong>Note To Prospective Students</strong></h2> 
+<h2><strong>写给希望读研/直博或参与科研实践的同学</strong></h2> 
 
 
 <br>
-<a href="../index.html">Back to Homepage</a></p>
+<a href="../index.html">回到主页</a></p>
 
-<hr />
+<nav>
+  <ul>
+    <li><a href="#section1">1. 研究相关</a>
+      <ul>
+        <li><a href="#section1.1">1.1 基础/背景知识</a></li>
+        <li><a href="#section1.2">1.2 主要研究方向</a></li>
+        <li><a href="#section1.3">1.3 是否对数学要求很高</a></li>
+        <li><a href="#section1.4">1.4 相关方向/老师</a></li>
+        <li><a href="#section1.5">1.5 做逆向/二进制吗</a></li>
+        <li><a href="#section1.6">1.6 学生指导经历</a></li>
+        <li><a href="#section1.7">1.7 未来研究课题</a></li>
+      </ul>
+    </li>
+    <li><a href="#section2">2. 毕业相关</a>
+      <ul>
+        <li><a href="#section2.1">2.1 毕业要求</a></li>
+        <li><a href="#section2.2">2.2 是否允许实习</a></li>
+        <li><a href="#section2.3">2.3 工作前景</a></li>
+        <li><a href="#section2.4">2.4 招生标准</a></li>
+      </ul>
+    </li>
+    <li><a href="#section3">3. 其他问题</a></li>
+  </ul>
+</nav>
 
-<div><br />
-</div>
-I am always interested in working with self-motivated students on challening research problems. 
-Before reaching out to me, kindly take the time to read this post. 
+<h2 id="section1">1. 研究相关</h2>
+<h3 id="section1.1">1.1 基础/背景知识</h3>
+<ul>
+  <li>PL研究概述 <a href="https://www.yuque.com/rainoftime/bdhh8i/wpk9g8g5bekv2owg">https://www.yuque.com/rainoftime/bdhh8i/wpk9g8g5bekv2owg</a></li>
+</ul>
 
-<!--
-Before reaching out to me, kindly take the time to read this post.  I will provide some general advice applicable to all students, followed by specific advice for specific classes of students.
+<h3 id="section1.2">1.2 主要研究方向</h3>
+<p>总的来说：程序分析与验证、程序合成与自动推理</p>
+<ul>
+  <li><strong>从目的上</strong>：有"狭义"的安全（主要是软件安全，侧重内存安全、信息流安全），也有广义的可靠性（如鲁棒性、功能正确性等)，以及性能（和编译优化类似），乃至代码重构等
+    <ul>
+      <li>之前做的比较通用（对领域场景限制较少）。个人目前想适当多结合<strong>密码学</strong>相关的（不强求每个学生都一起"探索"）</li>
+      <li>不要求学生都做安全相关(比如也可以做广义的可靠性，或者性能，或者提升程序员生产力的其他方法)</li>
+    </ul>
+  </li>
+  <li><strong>从方法上</strong>：既有比较偏基础理论/算法的，也有比较偏上层应用的
+    <ul>
+      <li><strong>偏基础</strong>：约束求解算法（如PLDI 21a) ，图算法(如OOPSLA 22a)，以及其他一些底层分析/验证算法(如PLDI 24 指针分析, OOPSLA 21抽象解释, etc.)</li>
+      <li><strong>偏应用</strong>：做得比较多的是自动查找真实大规模程序的bug（这一块和安全、软件工程联系较多）。也做过一点小规模程序的验证（这一块和形式化联系较多），以及一点软件性能优化(如优化Java Collection的使用, OOPSLA 22b; 减少冗余查询, ICSE 23）</li>
+    </ul>
+  </li>
+  <li><strong>是否用机器学习/深度学习</strong>：目前的论文只有一篇用了相关的（非第一作者）。后面可能可以用(但是目前个人不太擅长)，比如ML for PL, PL for ML 两个大方向。</li>
+</ul>
 
-<h3>To all students</h3>
-When contacting me, please kindly provide a CV that outlines your educational achievements, any previous research experience you may have had, references to any code you have authored, and a list of software programs with which you are familiar with.
+<h3 id="section1.3">1.3 是否对数学要求很高</h3>
+<ul>
+  <li>同方向（大&&小方向）有的可能用比较复杂一些的数学，比如量子程序验证(PS：量子程序验证很多也没用太复杂的数学，比如不用懂量子力学之类的。。)、type theory(偏向纯数理逻辑，已经超出PL了，和type system不太一样)? 其实总体我用的要求不高（即便是偏基础算法的那块。。）</li>
+  <li>目前有两块。一块是处理代码。偏安全、性能和编译有些交集(主要是中端的代码分析，以及一些相关工具链)。 偏正确性的有特定的算法和工具（比如求解器）。很多在于对被处理对象的理解（比如被测软件的特性）、然后基于理解做些"hack"， 算法本身不会多复杂。另一块是对逻辑约束的处理。这一块做得比较少，且往往和上层应用（如代码验证）相关。这里可以做得比较深，比如用比较复杂的数学，但是也有相对简单的（要看具体研究的约束类型、上层应用类型等因素）</li>
+</ul>
 
-<br>
-Including just a CV in the email may not be enough. 
-Please take the opportunity to review my <a href="https://rainoftime.github.io/">publications</a> and the suggested reading list <a href="https://rainoftime.github.io/html/reading.html">here</a>. Additionally, include a detailed explanation of how your interests and background align with my research endeavors.
-You can also try building and running the open-source tools developed by my group that are available on <a href="https://github.com/ZJU-Automated-Reasoning-Group">GitHub</a>.
--->
+<h3 id="section1.4">1.4 相关方向/老师</h3>
+<ul>
+  <li>"广义/大方向"上相关的老师挺多的，比如软件分析与测试(软件工程领域)、软件与系统安全(安全领域)、程序验证(形式化领域)等相关方向的老师。所用的技术也有一些交集（比如静态分析、约束求解）</li>
+  <li>偏向编程语言的(即便是分析&验证&合成)，国内相对比较少，如<a href="https://csrankings.org/#/index?none&cn">https://csrankings.org/#/index?none&cn</a> </li>
+</ul>
 
-<h3>To prospective Master/Ph.D. students</h3>
-Currently, similar to the ones below:)
+<h3 id="section1.5">1.5 做逆向/二进制吗</h3>
+<ul>
+  <li>之前绝大部分做的是源代码的测试/分析/验证/合成/优化，以C/C++为主</li>
+  <li>二进制了解一些，发过一篇相关的论文(只是用了一点相关工具)，之后有一定可能会做一点相关的</li>
+</ul>
 
-<h3>To undergraduate students</h3>
 
-For undergraduate students (SRTP, final year project, research assistant, etc), you are welcome to explore various potential research directions:
+<h3 id="section1.6">1.6 学生指导经历</h3>
+<ul>
+  <li>帮助指导多名博士同学，均发表了各自的第一篇论文（当然有的是Idea，有的是方法改进，有的是写作提炼），包括{S&P}，{PLDI, OOPSLA}，{ICSE, ASE}， 均为CCF A类+Core Rank A*，而且是信息安全、编程语言、软件工程各自的旗舰会议，其中OOPSLA获杰出论文奖</li>
+  <li>自己的学生： 第一届23年才入学，还没有毕业的。。</li>
+</ul>
+
+<h3 id="section1.7">1.7 未来研究课题</h3>
+不得不说，这个问题相当程度上受导师研究项目影响(毕竟需要交差:)，但是具体研究什么也有灵活性。以下是一些可能的话题/方向：
       <ul>
          <li class="item">
           <a>Foundamental algorithms for program analysis&verification: Pointer analysis, CFL-reachability, numerical abstract interpretation, SMT-based invariant generation</a>
@@ -61,5 +117,59 @@ For undergraduate students (SRTP, final year project, research assistant, etc), 
           <a>Other ideas the students come up with.</a>
         </li>
       </ul>
+
+<h2 id="section2">2. 毕业相关</h2>
+<h3 id="section2.1">2.1 毕业要求</h3>
+<ul>
+  <li>硕士：按学院要求。目前是"一个创新成果"，如果没发表小论文(会议/期刊学术论文的"别名")，写个专利保底也算创新成果。剩下的话就是毕业论文，需要相对完整做一个东西，比如基于小论文的工作按毕业论文模版写长一点（小论文不一定要发表）</li>
+  <li>博士：按学院要求</li>
+</ul>
+
+<h3 id="section2.2">2.2 是否允许实习</h3>
+<ul>
+  <li>一般大家的建议是达到毕业要求再实习（具体也不一定）。如果自己找的话，学生本人认为对未来的工作有帮助就行，没有其他要求。如果导师推荐的话，最好是大公司的相关团队，比如对方有自己的朋友/同学/论文合作者（不要求项目形式，也就是不一定我和对方有正式的项目合作）</li>
+</ul>
+
+<h3 id="section2.3">2.3 工作前景</h3>
+<p>下面主要面向硕士&&工业界工作，博士&&学术界相关见本文最后</p>
+<ul>
+  <li><strong>除了安全之外</strong>，很多其他"业务/方向/应用"都涉及代码分析，比如
+    <ul>
+      <li><strong>研发效能</strong>: 通过各种方式提高开发者生产力，比如代码搜索、代码特征度量、代码大模型。。</li>
+      <li><strong>DevSecOps</strong>: 做/维护基础工具，给程序员、安全研究员等相关人员用</li>
+      <li><strong>测试开发</strong>比如测试用例生成工具，具体工作不一定就是在"测开"部门</li>
+      <li><strong>编译</strong>: 不限于优化，比如可能是前端/后端的适配。不过编译圈子比较窄，就业选择主要是大公司或初创公司</li>
+      <li><strong>形式验证</strong>国内公司应该很少, 华为等大公司有相关部门，如费马实验室</li>
+      <li>...?</li>
+    </ul>
+  </li>
+  <li>很多不那么直接相关的方向（比如数据库等）也会涉及相关工具，比如性能profiling、错误诊断、重构支持、...</li>
+  <li>案例： <a href="https://zhuanlan.zhihu.com/p/691230938">https://zhuanlan.zhihu.com/p/691230938</a> (和我相关的论文一部分是博士期间原实验室的项目合作，另一部分是因为之前实验室的同学在那里）</li>
+</ul>
+
+<h3 id="section2.4">2.4 招生标准</h3>
+<ul>
+  <li>喜欢编程, 对以上提到某个研究方向有兴趣, 或者只是对编译器、操作系统，或各种代码分析工具的原理感兴趣（不要求有相关的项目/比赛/科研实践经历)</li>
+  <li>加分项: 和我一起做过研究(形式不限)</li>
+</ul>
+
+<h2 id="section3">3. 其他问题</h2>
+<p>对以上内容有疑问/困惑/..., 或者关于招生指标、硕/博士待遇、实验室工位等其他各种问题，欢迎微信私聊或者面谈(本校学生玉泉/西溪/紫金港/萧山/..均可）</p>
+<p>（关于微信：可先联系 pyaoaa@zju.edu.cn或其他可能认识我的同学，谢谢!!!)</p>
+
 </body>
 </html>
+
+<!--
+   For undergraduate students (SRTP, final year project, research assistant, etc), you are welcome to explore various potential research directions:
+
+Before reaching out to me, kindly take the time to read this post.  I will provide some general advice applicable to all students, followed by specific advice for specific classes of students.
+
+<h3>To all students</h3>
+When contacting me, please kindly provide a CV that outlines your educational achievements, any previous research experience you may have had, references to any code you have authored, and a list of software programs with which you are familiar with.
+
+<br>
+Including just a CV in the email may not be enough. 
+Please take the opportunity to review my <a href="https://rainoftime.github.io/">publications</a> and the suggested reading list <a href="https://rainoftime.github.io/html/reading.html">here</a>. Additionally, include a detailed explanation of how your interests and background align with my research endeavors.
+You can also try building and running the open-source tools developed by my group that are available on <a href="https://github.com/ZJU-Automated-Reasoning-Group">GitHub</a>.
+-->
