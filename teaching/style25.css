@@ -1,11 +1,12 @@
 h1 {
   font-weight: bold;
-  color: #8A491E;
-  font-family: 'Georgia',sans serif;
+  color: #dd8b54;
+  font-family: 'Georgia', sans-serif;
 }
 
 body {
   font-family: 'Georgia', serif;
+  padding-left: 20px;
 }
 
 span.alert {
