@@ -48,7 +48,7 @@ a.visited {
 
 a.hover {
     text-decoration: none; 
-    color: $FC0; 
+    color: #FC0;
 } 
 
 dd {
