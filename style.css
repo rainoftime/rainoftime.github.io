@@ -73,3 +73,9 @@ img {
     padding: 0; 
     border-width: 0px; 
 } 
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin-right: 5mm;
+}
