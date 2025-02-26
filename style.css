@@ -79,3 +79,6 @@ img {
     text-justify: inter-ideograph;
     margin-right: 5mm;
 }
+.publication-item {
+    margin-bottom: 10px;
+}
