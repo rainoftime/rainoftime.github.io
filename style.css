@@ -77,8 +77,10 @@ img {
 .justified-text {
     text-align: justify;
     text-justify: inter-ideograph;
-    margin-right: 5mm;
+    margin-right: 3mm;
 }
+
+
 .publication-item {
     margin-bottom: 10px;
 }
