@@ -53,7 +53,7 @@ dd {
     margin-bottom: .75em; 
 } 
 
-.item {
+li, .item {
     margin-bottom: .5em; 
 } 
 
