@@ -200,15 +200,13 @@
         <li>
           Compiler Optimization-Based SMT Simplifications: An In-Depth Study. Hanyun Jiang, Peisen Yao, Jiachen Lu, Yongwang Zhao, and Kui Ren. Working paper.
         </li>
+
+        <li>
+          Bounded-Exhaustive Subspace Diversification for SMT Solver Testing, Junda Zheng, Peisen Yao. Working paper.
+        </li>
       </ul>
       <hr noShade size=2.5>
 
-      <!--
-        <li>
-          Bounded-Exhaustive Subspace Diversification
-for SMT Solver Testing, Junda Zheng, Peisen Yao.
-        </li>
-      -->
     
       
       <a name="publication"></a>
@@ -403,6 +401,24 @@ for SMT Solver Testing, Junda Zheng, Peisen Yao.
       <hr noShade size=2.5>
       <a name="software"></a>
       <h3>Software</h3>
+      
+      <!-- Project Highlights Section -->
+       <!--
+      <center>
+      <blockquote>
+        <p><strong>Static Analysis</strong>: <strong>1000+ bugs</strong> found in mature open-source projects<br>
+        (Linux Kernel, FreeBSD, Firefox, HBase, OpenSSL, PostgreSQL, MySQL, Redis, FFmpeg, Apache HTTPd, Git, Python, and many others)</p>
+        
+        <p><strong>SMT Solver Testing</strong>: <strong>1000+ bugs</strong> found in state-of-the-art SMT solvers<br>
+        [Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, Vampire]<br>
+        [Reports: <a href="https://smtfuzz.github.io/">smtfuzz</a>]</p>
+        
+        <p><strong>Fuzzing</strong>: Vulnerabilities detected in open-source projects<br>
+        [Reports: <a href="https://outstanding-hydrogen-2d1.notion.site/Trophies-aef45e1245a64528bd8ec111b475e03b">Pangolin/Beacon/Titan</a>]</p>
+        
+      </blockquote>
+      </center>
+      -->
       <ul>
           <li>Current Projects
             <ul>
@@ -411,13 +427,6 @@ for SMT Solver Testing, Junda Zheng, Peisen Yao.
                 <a href="https://github.com/ZJU-Automated-Reasoning-Group/lotus">Lotus</a> is a program analysis and verification framework built on top of LLVM, CUDD, WALI, Z3, and Crab</a> (<a href="">ISSTA'25</a>)
               </p>
             </li>
-            <!--
-            <li>
-              <p class="justified-text">
-                <a href="https://github.com/ZJU-Automated-Reasoning-Group/cactus">Cactus</a> is a pointer and value-flow analyzer for C/C++ source code and binaries based on LLVM, CUDD, and capstone</a>
-              </p>
-            </li>
-            -->
            <li>
             <p class="justified-text">
                 <a href="https://github.com/ZJU-Automated-Reasoning-Group/efmc">efmc</a> is an SMT-based software model checker with several engines,  including template-based verification, Houdini, k-induction, IC3/PDR, etc. (<a href="./files/ASE23Invariant.pdf">ASE'23a</a>)
@@ -442,7 +451,7 @@ for SMT Solver Testing, Junda Zheng, Peisen Yao.
               <p class="justified-text">
                 <a href="https://www.sourcebrella.com/">Pinpoint</a> is an SMT-based, industrial-strength static analysis framework (<a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21a</a>, <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21b</a>, <a href="./files/ASE21TransCode.pdf">ASE'21</a>, <a href="./files/ICSE22Wit.pdf">ICSE'22</a>, <a href="./files/OOPSLA22-FLARE.pdf">OOPSLA'22a</a>, <a href="./files/SECURITY23LockPick.pdf">USENIX Security'23</a>, <a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>, <a href="">PLDI'24</a>...) <br>
               <ul>
-                <li>Pinpoint has found <a href="https://fusion-scan.github.io/">hundreds of bugs</a> in many mature and fundamental open-source projects, including Linux Kernel, FreeBSD, Firefox, HBase, OpenSSL, PostgreSQL, MySQL, Memcached, Redis, FFmpeg, Apache HTTPd, Git, Python, Tmux, Vim, and many others 
+                <li>Pinpoint has found <a href="https://fusion-scan.github.io/"><span style="color:#FF0000">hundreds of bugs</span></a> in many mature and fundamental open-source projects, including Linux Kernel, FreeBSD, Firefox, HBase, OpenSSL, PostgreSQL, MySQL, Memcached, Redis, FFmpeg, Apache HTTPd, Git, Python, Tmux, Vim, and many others 
                 </li>
                 <li>Pinpoint was commercialized at <a href="https://www.sourcebrella.com/">Sourcebrella Inc</a>, which was acquired by Ant Group
                 </li>
@@ -454,7 +463,7 @@ for SMT Solver Testing, Junda Zheng, Peisen Yao.
               <ul>
                 <li>A partial of of detected vulnerabilities in open-source projects can be found <a href="https://outstanding-hydrogen-2d1.notion.site/Trophies-aef45e1245a64528bd8ec111b475e03b">here</a>
                 </li>
-                <li>Our work has been successfully deployed in the Huawei tool-chain and detected more than 1000+ bugs! We have thus received the Huawei Distinguished Collaborator 2021 award
+                <li>Our work has been successfully deployed in the Huawei tool-chain and detected more than <span style="color:#FF0000">1000+ bugs</span>! We have thus received the Huawei Distinguished Collaborator 2021 award
                 </li>
               </ul>
               </p>
@@ -477,7 +486,7 @@ for SMT Solver Testing, Junda Zheng, Peisen Yao.
                 <p class="justified-text">
                 <a href="https://github.com/ZJU-Automated-Reasoning-Group/smtfuzz">smtfuzz</a> is a fuzzer for SMT solvers (<a href="https://dl.acm.org/doi/abs/10.1145/3468264.3468540">ESEC/FSE'21</a>, <a href="https://dl.acm.org/doi/10.1145/3460319.3464803">ISSTA'21</a>)
               <ul>
-                <li>Smtfuzz has found <a href="https://smtfuzz.github.io/">1000+ bugs</a> in several state-of-the-art SMT solvers and first-order theorem provers, such as Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, and Vampire
+                <li>Smtfuzz has found <a href="https://smtfuzz.github.io/"><span style="color:#FF0000">1000+ bugs</span></a> in several state-of-the-art SMT solvers and first-order theorem provers, such as Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, and Vampire
                 </li>
                 <li>You may try a simplified implementation of the random formula generator by "pip install smtfuzz"
                 </li>
