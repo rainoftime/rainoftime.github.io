@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Compiling Techniques</title>
+  <link rel="stylesheet" type="text/css" href="style25.css" />
+ </head>
+ <body>
+   <center><span style="font-size:36px; font-weight:bold; color:#8A491E; align: center">Compiler Construction (Spring 25)</span></center>
+   <h2>Course Information</h2>
+   <b>Lectures: </b>Thursday<br />
+   <b>Instructor:</b> <a href="mailto:pyaoaa@zju.edu.cn">rainoftime</a>
+   <br/>
+   <b>Teaching assistant:</b> <a href="">TBD</a><br/>
+   <h2>Schedule</h2>
+
+
+   <table class="alt-color">
+     <colgroup>
+       <col span="1" style="padding: 10px 5px;" />
+       <col span="1" style="padding: 10px 5px;" />
+       <col span="1" style="padding: 10px 5px;" />
+     </colgroup>
+     <tr style="font-weight:bold">
+       <td>Section</td>
+       <td>Topic</td>
+       <td>Readings <br> (A=Appel, C=Cooper, D=Dragon, R=rainoftime)</td>
+     </tr>
+
+     <tr>
+       <td><a href="">Introduction</a></td>
+       <td>Course overview</td>
+       <td>A1</td>
+      </tr>
+      <tr>
+        <td><a href="">Lexical Analysis</a></td>
+        <td>RE, automata, lexer</td>
+        <td>A2, D3.3, D3.6-3.8</td>
+      </tr>
+      <tr>
+        <td><a href="">Parsing I</a></td>
+        <td>CFG, parse tree</td>
+        <td>A3.1, D4.2</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Parsing II</a></td>
+        <td>Top-down parsing</td>
+        <td>A3.2, D4.3-4</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Parsing III</a></td>
+        <td>Bottom-up parsing</td>
+        <td>A3.3, D4.5-7</td>
+      </tr>
+ 
+       <tr>
+        <td><a href="">Abstract Syntax</a></td>
+        <td>Semantic action, AST</td>
+        <td>A3.4, A4, D4.8-9</td>
+      </tr>
+ 
+       <tr>
+        <td><a href="">Semantic Analysis</a></td>
+        <td>Symbol table, type checking</td>
+        <td>A5, D6.1-2, D7.6, Cardelli</td>
+      </tr>
+ 
+        <td><a href="">Activation Record</a></td>
+        <td>Memory layout, stack frame, use of registers</td>
+        <td>A6, D7.2-4</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Translating to Intermediate Code</a></td>
+        <td>Overview of IR, translation to IR tree</td>
+        <td>A7, C5, D8.1</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Basic Block and Traces</a></td>
+        <td>Lowering of IR tree</td>
+        <td>A8</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Instruction Selection</a></td>
+        <td>Maximal munch, dyanmic programming, tree grammars</td>
+        <td>A9</td>
+      </tr>
+     <tr>
+        <td><a href="">Liveness Analysis</a></td>
+        <td>Overview of compiler optimizations, liveness analysis</td>
+        <td>A10, D10.6</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="">Register Allocation</a></td>
+        <td>Graph coloring</td>
+        <td>A11, C13.3, C13.5, D9.5-6</td>
+      </tr>
+ 
+     <tr>
+        <td><a href="">Garbage Collection</a></td>
+        <td>Mark-and-sweep, reference counting, copy collection</td>
+        <td>A13, C13.5</td>
+      </tr>
+ 
+       <tr>
+        <td><a href="">Object-oriented Languages</a></td>
+        <td>Field layout, method dispatch, membership testing</td>
+        <td>A14</td>
+      </tr>
+ 
+       <tr>
+        <td><a href="">Loop Optimizations</a></td>
+        <td>Dominance, natural loops, induction invarianthoisting</td>
+        <td>A18</td>
+      </tr>
+
+   </table>
+
+   <h2>References</h2>
+    <ul>
+        <li>[Appel] Andrew Appel. Modern Compiler Implementation in C
+          <br> 现代编译原理 C语言描述. 人民邮电出版社 (虎书)
+        </li>
+        <li>[Dragon] Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman. Compilers: Principles, Techniques, and Tools 
+          <br> 编译原理. 影印本-2011、译本-2009, 机械工业出版社 (龙书)</li>
+        <li>[Cooper] Keith Cooper & Linda Torczon. Engineering a  Compiler
+          <br> 编译器工程，机械工业出版社 （对应原书第1版) (橡书?) 
+          <br> 编译器设计，人民邮电出版社 （对应原书第2版) (橡书?)
+        </li>
+        <li>Crafting Interpreters
+        </li>
+        <li>[rainoftime] Lecture Notes on Compiler Construction
+        </li>
+  </ul>
+
+    <h2>Some Tutorials</h2>
+    <ul>   
+      <li>
+        <a href="https://github.com/rainoftime/tiger-cpp">A Tiger Compiler in C++</a>
+      </li>
+       <li>
+        <a href="https://github.com/rainoftime/tiger">A Tiger Compiler in Python</a>
+      </li>
+      <li>
+        <a href="https://github.com/dabeaz/pylox">pylox: A Python implementation of the Lox language</a>
+      </li>
+    <li>
+      <a href="pdf/LLVM_IR_Passes.pdf">LLVM IR and Passes</a>
+    </li>
+    <li>
+      <a href="https://buildmedia.readthedocs.org/media/pdf/mapping-high-level-constructs-to-llvm-ir/latest/mapping-high-level-constructs-to-llvm-ir.pdf">Mapping High Level Constructs to LLVM IR Documentation</a>
+    </li> 
+     </ul>
+
+   <h2>Other Resources</h2>   
+   <ul>
+    <li>
+      <a href="https://godbolt.org/">Compiler Explorer</a>
+    </li>
+    <li>
+      <a href="https://github.com/PacktPublishing/LLVM-Techniques-Tips-and-Best-Practices-Clang-and-Middle-End-Libraries">LLVM Techniques, Tips, and Best Practices Clang and Middle-End Libraries</a>
+    </li>
+    <li>
+      <a href="https://www.cs.utexas.edu/users/mckinley/20-years.html">20 Years of the PLDI 1979-1999: A Selection</a>
+    </li>
+    <li>
+      <a href="https://www.cs.cmu.edu/~popl-interviews/">People of Programming Languages: An Interview Project in Conjunction with POPL 2018</a>
+     </li>
+     <li>
+      <a href="http://abstract.ece.cmu.edu/peopleOfPLDI/">People of Language Design and Implementation: An Interview Project in Conjunction with PLDI 2019</a>
+     </li>
+    </ul>
+ </body>
+</html>
