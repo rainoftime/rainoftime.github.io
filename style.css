@@ -1,0 +1,79 @@
+body {
+    color: #000000;
+    font-family: arial; 
+    background-color: white; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+h1, h2, h3, dt, th {
+    font-weight: bold; 
+    color: #000000;
+} 
+
+td {
+    font-weight: normal; 
+    color: #000000;
+    font-size: italic;
+} 
+
+em {
+    font-size: italic;
+    font-weight: normal; 
+}
+
+strong {
+    font-style: normal; 
+    font-weight: bold; 
+}
+
+a.button {
+  text-decoration: none;
+  color: #6666ff; 
+}
+
+a.link {
+    text-decoration: none; 
+    color: #6666ff; 
+}
+
+a.visited {
+    text-decoration: none; 
+    color: #0000CC; 
+} 
+
+a.hover {
+    text-decoration: none; 
+    color: #FC0;
+} 
+
+dd {
+    margin-bottom: .75em; 
+} 
+
+img {
+    vertical-align: middle; 
+    padding: 0; 
+    border-width: 0px; 
+}
+
+.photo {
+    float: right; 
+    width: 201px; 
+    height: 302px; 
+    margin-left: 20px; 
+    margin-bottom: 20px; 
+    padding: 0; 
+    border-width: 0px; 
+} 
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin-right: 3mm;
+}
+
+li, .item {
+    margin-bottom: .5em; 
+} 

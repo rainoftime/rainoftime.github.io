@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Principles of Programming Languages</title>
+  <link rel="stylesheet" type="text/css" href="style25.css" />
+  <style type="text/css">
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: "Georgia", serif;
+      line-height: 1.5;
+      color: #333;
+    }
+    .shortcuts {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      font-size: 0.9em;
+      text-align: center;
+    }
+    .shortcuts a {
+      margin: 0 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: #2980b9;
+    }
+    .shortcuts a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #333;
+      border-bottom: 2px solid #8A491E;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.6em;
+      color: #8A491E;
+      border-bottom: 1px solid #ddd;
+      margin-top: 1.5em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    .note {
+      background-color: #f9f9f9;
+      border-left: 4px solid #8A491E;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+    .course-meta {
+      text-align: right;
+      font-style: italic;
+      color: #8A491E;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Principles of Programming Languages (Spring 26)</h1>
+  
+  <div class="shortcuts">
+    <a href="#info">Course Info</a> | 
+    <a href="#description">Description</a> | 
+    <a href="#grading">Grading</a> | 
+    <a href="#schedule">Schedule</a> | 
+    <a href="#references">References</a> | 
+    <a href="#resources">Resources</a>
+  </div>
+
+  <section id="info">
+    <h2>Course Information</h2>
+    <p><strong>Lectures:</strong> TBD</p>
+    <p><strong>Office Hours:</strong> TBD</p>
+    <p><strong>Instructor:</strong> <a href="mailto:pyaoaa@zju.edu.cn">rainoftime</a></p>
+    <p><strong>Teaching assistant:</strong> <a href="">TBD</a></p>
+  </section>
+  
+  <section id="description">
+    <h2>Course Description</h2>
+    <p>This course explores the theoretical foundations of programming languages, focusing on language design principles, semantics, and type systems. Students will develop a deep understanding of how programming languages are defined and reasoned about formally. The course covers various semantic frameworks, lambda calculus, type systems, and modern language features.</p>
+    
+    <div class="note">
+      <p><strong>Prerequisites:</strong> Basic knowledge of discrete mathematics, algorithms, and experience with at least one programming language. Prior exposure to functional programming is helpful but not required.</p>
+    </div>
+  </section>
+
+  <section id="grading">
+    <h2>Grading</h2>
+    <ul>
+      <li><strong>Assignments (60%)</strong>: Four programming and proof assignments</li>
+      <li><strong>Midterm Exam (20%)</strong>: Covers material from the first half of the course</li>
+      <li><strong>Final Exam (20%)</strong>: Covers material from the second half of the course</li>
+    </ul>
+  </section>
+  
+  <section id="schedule">
+    <h2>Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
+          <th>Readings<br>(S=SF, P=PFPL)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><a href="">Introduction</a></td>
+          <td>Course overview, history of programming languages, paradigms, and language design principles</td>
+          <td>P: Ch. 1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="">Mathematical Foundations</a></td>
+          <td>Sets, relations, functions, induction, logic </td>
+          <td>S: Basics, P: Ch. 2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="">Operational Semantics</a></td>
+          <td>Small-step and big-step semantics, evaluation contexts, abstract machines</td>
+          <td>P: Ch. 3-4, S: Imp, Winskel: Ch. 2-4</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a href="">Denotational Semantics</a></td>
+          <td>Fixed points, compositionality, basic model theory</td>
+          <td>P: Ch. 5, Winskel: Ch. 5-8</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="">Axiomatic Semantics</a></td>
+          <td>Hoare logic, weakest preconditions, basic proof theory</td>
+          <td>S: Hoare Logic, P: Ch. 6, Winskel: Ch. 12</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><a href="">Lambda Calculus</a></td>
+          <td>Untyped lambda calculus, alpha/beta/eta equivalence, Church encodings, evaluation strategies</td>
+          <td>P: Ch. 8-9, S: LF</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><a href="">Simple Typed Lambda Calculus</a></td>
+          <td>Strong normalizability, progress and preservatio</td>
+          <td>P: Ch. 10-11, S: STLC</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><a href="">Midterm Exam</a></td>
+          <td>Review and assessment of course material covered so far</td>
+          <td>All previous readings</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><a href="">System F</a></td>
+          <td>Parametric polymorphism, impredicativity, Reynolds abstraction theorem</td>
+          <td>P: Ch. 18-19, S: Poly</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><a href="">Type Inference</a></td>
+          <td>Hindley-Milner type system, unification, principal types</td>
+          <td>P: Ch. 20, S: InferWithError</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><a href="">Refinement Types</a></td>
+          <td>Liquid types, SMT solving, automated verification</td>
+          <td>P: Ch. 30, Vazou et al. (2014)</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><a href="">Algebraic Effects (?)</a></td>
+          <td>Effect systems, handlers, monads, delimited continuations</td>
+          <td>Plotkin & Pretnar (2009)</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><a href="">Expression Problem</a></td>
+          <td>Extensibility challenges, visitor pattern, type classes, object algebras</td>
+          <td>Cook (1990), Oliveira & Cook (2012)</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><a href="">Gradual Typing</a></td>
+          <td>Type dynamics, blame calculus, hybrid typing, optional typing, performance</td>
+          <td>Siek & Taha (2006), P: Ch. 27</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><a href="">TBD</a></td>
+          <td>TBD</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><a href="">Project Presentations & Review</a></td>
+          <td>Final project presentations and comprehensive course review</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="references">
+    <h2>References</h2>
+    <div style="column-count: 2; column-gap: 30px;">
+      <ul>
+        <li><strong>[SF]</strong> Benjamin C. Pierce et al. <em>Software Foundations</em>. Electronic textbook, 2023.</li>
+        <li><strong>[PFPL]</strong> Robert Harper. <em>Practical Foundations of Programming Languages</em>, 2nd ed. Cambridge University Press, 2016.</li>
+        <li><strong>[Winskel]</strong> Glynn Winskel. <em>The Formal Semantics of Programming Languages</em>. MIT Press, 1993.</li>
+        <li>Simon Peyton Jones. <em>The Implementation of Functional Programming Languages</em>. Prentice Hall, 1987.</li>
+        <li>Samson Abramsky & Guy McCusker. "Game Semantics." In <em>Computational Logic</em>, 1999.</li>
+        <li>Niki Vazou et al. "Refinement Types for Haskell." In <em>ICFP</em>, 2014.</li>
+        <li>Gordon Plotkin & Matija Pretnar. "Handlers of Algebraic Effects." In <em>ESOP</em>, 2009.</li>
+        <li>William Cook. "Object-Oriented Programming Versus Abstract Data Types." In <em>FOOL</em>, 1990.</li>
+        <li>Bruno C. d. S. Oliveira & William R. Cook. "Extensibility for the Masses." In <em>ECOOP</em>, 2012.</li>
+        <li>Jeremy G. Siek & Walid Taha. "Gradual Typing for Functional Languages." In <em>Scheme and Functional Programming Workshop</em>, 2006.</li>
+        <li>Benjamin C. Pierce. "ProofKit: A Framework for Building Certified Language Implementations." Technical Report, 2009.</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="resources">
+    <h2>Resources & Related Topics</h2>
+    <div class="shortcuts" style="line-height: 1.8;">
+      <a href="https://github.com/rainoftime/ppl-spring26">Course Repository</a> |
+      <a href="https://plfa.github.io/">PLFA</a> |
+      <a href="https://www.cis.upenn.edu/~bcpierce/tapl/">TAPL</a> |
+      <a href="https://softwarefoundations.cis.upenn.edu/">Software Foundations</a> |
+      <a href="https://okmij.org/ftp/tagless-final/">Tagless Final</a> |
+      <a href="https://okmij.org/ftp/continuations/">Continuations</a> |
+      <a href="https://okmij.org/ftp/Computation/lambda-calc.html">Lambda Calculus</a> |
+      <a href="https://okmij.org/ftp/Computation/having-effect.html">Effects</a> |
+      <a href="https://okmij.org/ftp/ML/generalization.html">Polymorphic Type Inference</a> |
+      <a href="https://okmij.org/ftp/Haskell/extensible/">Extensible Effects</a> |
+      <a href="https://okmij.org/ftp/Streams.html">Streams</a> |
+      <a href="https://okmij.org/ftp/meta-programming/">Meta-programming</a>
+    </div>
+    <ul>
+      <li><a href="https://www.cs.cornell.edu/courses/cs6110/2018sp/">Cornell CS 6110: Advanced Programming Languages</a></li>
+      <li><a href="https://www.cl.cam.ac.uk/teaching/2021/ConceptsPL/">Cambridge: Concepts in Programming Languages</a></li>
+      <li><a href="https://okmij.org/ftp/">Oleg Kiselyov's Research</a> - Extensive resources on programming language theory, continuations, effects, and meta-programming</li>
+    </ul>
+  </section>
+  
+</body>
+</html>

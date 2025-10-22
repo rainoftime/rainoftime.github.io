@@ -1,0 +1,122 @@
+h1 {
+  font-weight: bold;
+  color: #e67e22;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Georgia', serif;
+  padding: 2em;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f9f9f9;
+}
+
+span.alert {
+  color: #3498db;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  padding: 0.2em 0.4em;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 3px;
+}
+
+div.urgent {
+  font-size: 1.2em;
+  color: #e74c3c;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  padding: 1em;
+  border-left: 4px solid #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  margin: 1em 0;
+}
+
+h2 {
+  font-weight: bold;
+  color: #d35400;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2em;
+  margin: 1em 0 0.5em;
+}
+
+a:link {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: #8e44ad;
+}
+
+table.alt-color {
+  border-collapse: collapse;
+  border: 1px solid #bdc3c7;
+  width: 100%;
+  margin: 1em 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+table.alt-color tr {
+  transition: background-color 0.3s ease;
+}
+
+table.alt-color td {
+  padding: 0.8em 1.2em;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table.alt-color th {
+  background: #34495e;
+  color: white;
+  padding: 1em;
+  text-align: left;
+}
+
+table.alt-color tr:nth-child(even) {
+  background: #ffffff;
+}
+
+table.alt-color tr:nth-child(odd) {
+  background: #f5f6fa;
+}
+
+pre.code {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.5em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+div.note {
+  width: 75%;
+  margin: 2em auto;
+  border: 2px solid #e74c3c;
+  padding: 1.5em;
+  border-radius: 4px;
+  background-color: rgba(231, 76, 60, 0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+span.tt {
+  font-family: 'Fira Code', monospace;
+  background-color: #f7f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+#menu a:link, #menu a:visited {
+  display: block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.8em 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}

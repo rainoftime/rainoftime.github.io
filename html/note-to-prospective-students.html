@@ -1,0 +1,239 @@
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J23RK0R02"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-2J23RK0R02');
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+
+<h2><strong>写给希望读研/博或参与科研实践的同学</strong></h2> 
+
+
+<br>
+<a href="../index.html">回到主页</a></p>
+
+<nav>
+  <ul>
+    <li><a href="#section1">1. 研究相关</a>
+      <ul>
+        <li><a href="#section1.1">1.1 背景知识</a></li>
+        <li><a href="#section1.2">1.2 研究方向</a></li>
+        <li><a href="#section1.3">1.3 数学要求</a></li>
+        <li><a href="#section1.4">1.4 相关领域</a></li>
+        <li><a href="#section1.5">1.5 做逆向吗</a></li>
+        <li><a href="#section1.6">1.6 类型系统</a></li>
+        <li><a href="#section1.7">1.7 学生指导</a></li>
+        <li><a href="#section1.8">1.8 未来课题</a></li>
+      </ul>
+    </li>
+    <li><a href="#section2">2. 毕业相关</a>
+      <ul>
+        <li><a href="#section2.1">2.1 毕业要求</a></li>
+        <li><a href="#section2.2">2.2 能否实习</a></li>
+        <li><a href="#section2.3">2.3 工作前景</a></li>
+      </ul>
+    </li>
+    <li><a href="#section2">3. 浙大相关</a>
+      <ul>
+        <li><a href="#section3.1">3.1 保研直博</a></li>
+        <li><a href="#section3.2">3.2 考研招生</a></li>
+        <li><a href="#section3.3">3.3 普博申请</a></li>
+        <li><a href="#section3.4">3.4 本科科研</a></li>
+      </ul>
+    </li>
+    <li><a href="#section4">4. 其他问题</a></li>
+     <ul>
+     <li><a href="#section4.1">4.1 招生标准</a></li>
+     </ul>
+
+    <li><a href="#section5">5. 结语</a></li>
+
+     </ul>
+    
+</nav>
+
+<h2 id="section0">0. 关于我</h2>
+浙江大学计算机科学与技术学院/网络空间安全学院"百人计划"研究员、博导,  CCF形式化方法专委、理论计算机科学专委执行委员, ACM SIGPLAN、SIGSAC会员, 国家级高层次青年人才。主要研究方向为编程语言(程序分析与验证、程序合成与优化)、数理逻辑(自动定理证明)、软件安全(漏洞挖掘)。相关成果发表于编程语言(PLDI, OOPSLA)、软件工程(ICSE, ESEC/FSE, ISSTA, ASE, TOSEM)、信息安全(S&P, USENIX Security, TDSC)、计算机系统(ASPLOS)等领域的CCF-A会议或期刊(包括浙大第一篇PLDI); 获编程语言领域顶级会议OOPSLA杰出论文奖(全国第3篇、国内独立完成的首篇)、ACM SIGSOFT杰出论文奖、Google研究论文奖等奖项; 针对数值抽象解释、别名分析、非线性约束求解提出系列算法，应用于针对大规模软件的动静态缺陷检测，发现Linux 内核等开源软件上千缺陷、获近百CVE ID。担任相关领域顶级会议(POPL, PLDI, OOPSLA, ISSTA, ASE, CCS)程序委员会委员(其中POPL, PLDI, OOPSLA均为浙大首次；POPL 2025和PLDI 2023国内PC分别仅有2人和3人).
+
+
+<h2 id="section1">1. 研究相关</h2>
+<h3 id="section1.1">1.1 背景知识</h3>
+<ul>
+  <li>PL(编程语言)研究科普 <a href="https://zhuanlan.zhihu.com/p/694379674">https://zhuanlan.zhihu.com/p/694379674</a></li>
+</ul>
+
+<h3 id="section1.2">1.2 研究方向</h3>
+<p>编程语言(程序分析与验证、程序合成与优化)、数理逻辑(自动定理证明)、软件安全(漏洞挖掘)</p>
+<ul>
+  <li><strong>从目的上</strong>：有"狭义"的安全（主要是软件安全，侧重内存安全、信息流安全），也有广义的可靠性（如功能正确性等)，以及性能（类似编译优化）等
+    <ul>
+      <li>之前做的比较通用, 之后想多结合<strong>编译、密码、量子</strong>等场景（不要求每个学生都一起"探索"）</li>
+      <li><strong>不要求每个学生都做安全相关</strong>(比如也可以是可靠性、性能，以及通用的基础算法等)</li>
+    </ul>
+  </li>
+  <li><strong>从方法上</strong>：既有比较偏基础理论/算法的，也有比较偏上层应用的
+    <ul>
+      <li><strong>偏基础</strong>
+          <ul>
+        <li>更“逻辑”的：约束求解/自动定理证明（如PLDI 21a, OOPSLA 21, ICSE 24)</li>
+          <li>更“PL”的：图算法(如OOPSLA 22a, 关于特殊图上的可达性)；指针分析(如PLDI 24, 希望回答"指针p能指向哪些地方"); 数值分析(如OOPSLA 21, 希望推断"整数x的取值范围是什么"), etc.</li>
+         </ul>
+      </li>
+      <li><strong>偏应用</strong>
+          <ul>
+             <li>做得比较多的给程序<strong>自动找bug/漏洞</strong>： 比如缓冲区溢出(ISSTA24）、除零(ICSE 22)等问题. 对象包括应用软件以及内核等基础软件。 <a href="https://rainoftime.github.io/html/cve.html">这里</a>有一些CVE信息</li>
+            <li>也做<strong>功能正确性</strong>检查: 比如某个快排实现是否"真的进行了排序"，方法包括偏形式化的(OOPSLA 21, etc) 和偏测试的（ISSTA 21, FSE 21)</li>
+             <li>以及一点软件<strong>性能优化</strong>: 比如优化Java Collection使用 (OOPSLA 22b)， 减少数据库冗余查询(ICSE 23）</li>
+         </ul>
+   </li>
+  </ul>
+  （可能看上去有点多，但很多都是我博士期间一手经验做过的。。）
+  </li>
+  <li><strong>是否用机器学习</strong>：有做，包括"传统"机器学习、大模型等。</li>
+</ul>
+
+<h3 id="section1.3">1.3 数学要求</h3>
+<ul>
+  <li>PL是个很大的领域，如果数学好就可以做偏理论的研究，如果编程好就可以做偏工程的.
+    </li>
+  <li><strong>其实总体我用的要求不高（即便是偏基础算法的那些)</strong>。偏安全、性能和编译原理课程有些交集。 偏正确性的和离散数学、计算理论有些交集。事实上，很多工作在于对被处理对象的理解、然后基于理解做些"hack"（类似系统安全中的一些研究)， 算法本身不会太复杂。</li>
+  <li><strong>结论: 对数学要求不高!(当然如果愿意的话, 也有机会用比较"高级"的数学，比如实代数几何、证明论, etc.)</strong></li>
+</ul>
+
+<h3 id="section1.4">1.4 相关方向</h3>
+<ul>
+  <li>"广义"上相关的方向挺多的，比如软件分析与测试(软件工程领域)、软件与系统安全(安全领域)、程序验证(形式化方法领域)、定理证明（“欧式”理论CS领域）等方向。所用的技术也有一些交集（比如静态分析、约束求解）
+  </li>
+  <li>偏向编程语言的(即便是分析&验证&合成)，国内相对比较少，可参考<a href="https://csrankings.org/">https://csrankings.org/</a> </li>
+</ul>
+
+<h3 id="section1.5">1.5 做逆向吗</h3>
+<ul>
+  <li>之前绝大部分做的是源代码的测试/分析/验证/合成/优化，以C/C++为主</li>
+  <li>二进制了解一些，发过相关的论文，之后有一定可能会继续做一点相关的</li>
+</ul>
+
+<h3 id="section1.6">1.6 类型系统</h3>
+<ul>
+  <li>有研究，但是倾向type system(更接近程序语言领域), 而非type theory(更接近纯数理逻辑领域)</li>
+  <li>目前关注的偏向类型系统和程序验证、安全等方向的交集，比如refinement type, information flow type, type-directed synthesis(而非偏向“给函数式编程语言加扩展")</li>
+</ul>
+
+<h3 id="section1.7">1.7 学生指导</h3>
+<ul>
+  <li>帮助指导多名同学(博士期间)/学生(现在)，均发表了各自的第一篇、第一作者论文（当然有的是Idea，有的是方法改进，有的是写作提炼），包括{S&P}，{PLDI, OOPSLA}，{ICSE, FSE, ASE, TOSEM}，均为CCF A类，而且是信息安全、编程语言、软件工程领域各自的旗舰会议/期刊，其中OOPSLA获ACM SIGPLAN杰出论文奖</li>
+</ul>
+
+<h3 id="section1.8">1.8 未来课题</h3>
+这个问题相当程度上受导师研究项目影响(毕竟要交差:)。以下是一些可能的话题/方向：
+      <ul>
+        <li class="item">
+        Foundamental algorithms for program analysis&verification: alias analysis, numerical domains, SMT-based verification
+        </li>
+ 
+       <li class="item">
+        Practical bug finding: fuzz testing, metamorphic testing, static vulnerability detection
+        </li>
+
+        <li class="item">
+        Automated reasoning: satisfiability, optimization, induction, counting, and sampling
+         </li>
+
+         <li class="item">
+          ML/LLM for program testing, analysis, verification, synthesis, optimization, etc.
+          </li>
+
+          
+         <li class="item">
+         Applying PL/SE/FM/Sec/ML techniques to more domains of computation, e.g., crypto, compilers, OS
+        </li>
+
+
+         <li class="item">
+          Other ideas the students come up with.
+        </li>
+      </ul>
+
+<h2 id="section2">2. 毕业相关</h2>
+<h3 id="section2.1">2.1 毕业要求</h3>
+<ul>
+  <li>硕士：按学院要求。目前是"一个创新成果"，如果没发表小论文(会议/期刊学术论文的"别名")，写个专利也算创新成果（需进入实质审查阶段)。剩下的话就是毕业论文，需要相对完整做一个东西，比如基于小论文的工作按毕业论文模版写长一点（小论文不一定要发表）</li>
+  <li>博士：按学院要求。</li>
+</ul>
+
+<h3 id="section2.2">2.2 能否实习</h3>
+<ul>
+  <li>硕士生的话一般研二暑期可以实习。如果是科研项目合作那种，具体看情况</li>
+</ul>
+
+<h3 id="section2.3">2.3 工作前景</h3>
+<p>下面主要面向硕士&&工业界</p>
+<ul>
+  <li><strong>除安全外</strong>，很多其他"方向/应用"都涉及代码分析，比如
+    <ul>
+      <li><strong>研发效能</strong>: 通过各种方式提高开发者生产力，比如代码搜索、度量、生成等</li>
+      <li><strong>代码中台</strong>: 做/维护基础工具，给程序员、安全研究员、测试团队等使用</li>
+      <li><strong>软件测试</strong>: 比如测试用例生成工具，具体工作不一定就是在"测开"部门</li>
+      <li><strong>编译优化</strong>: 不限优化，比如可能是前/后端适配。不过编译圈子比较窄，就业选择主要是大公司或初创公司</li>
+      <li><strong>形式验证</strong>: 国内公司很少, 华为等大公司有相关部门，如2012里面的费马实验室（还有其他部门也用形式化方法）</li>
+      <li>...?</li>
+    </ul>
+  </li>
+  <li>很多可能不那么直接相关的方向（比如数据库、云计算）也会涉及相关工具，比如性能诊断、错误定位、重构支持、查询生成、访问控制...</li>
+  <li>案例： <a href="https://zhuanlan.zhihu.com/p/691230938">https://zhuanlan.zhihu.com/p/691230938</a> (和我相关的论文一部分是博士期间的项目合作，另一部分是因为之前实验室的同学在那里）</li>
+</ul>
+
+<h2 id="section3">3. 浙大相关</h2>
+<h3 id="section3.1">3.1 保研直博</h3>
+<ul>
+  <li><strong>夏令营</strong>
+  ：浙大计院夏令营主要面向直博，招外校和本校外院学生；需参与一个月左右的科研实践(可线上或线下)；导师可以最多招3个参加夏令营、最后推荐1个优营<br>
+  (2024年夏令营信息: http://www.cs.zju.edu.cn/csen/2024/0527/c27011a2923257/page.htm)
+</li>
+  <li><strong>预推免</strong>：没有参加夏令营的可以报名预推免；参加了但是没拿到优营的也可以报，两者不影响（也有学生可能不想直博、倾向于保研，那夏令营可以看做是一个互相了解的机会）；预推免也有直博和保研</li>
+  <li><strong>本院学生预推免</strong>：
+    <ul>
+      <li>如果填志愿时没报网安，似乎是硕士/直博/硕士和直博三类志愿，按最后分数平行志愿录取。即便录了直博&志愿没网安，只要网安导师有名额，也可以比较方便地改志愿(但是硕士是不可以的！)
+      </li>
+      <li>
+      如果志愿是网安，应该也是学硕/专硕/硕士和博士三种志愿，复试似乎是在网安内部。建议有意向的同学报网安(尤其是硕士，应该是必须报网安)
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section3.2">3.2 考研招生</h3>
+(TBD)
+
+<h3 id="section3.3">3.3 普博申请</h3>
+(TBD)
+
+<h3 id="section3.4">3.4 本科科研</h3>
+一般一对一，会给独立的话题；尽量给有希望发论文、且路线相对明确的题目；尽量有初步方案和可能的几种方案、不会太”难“。出发点：如果只是”打杂“的话，可能也学不到什么（以及也不会很积极:)
+可能某段时间我缺少以上性质的idea，那么鼓励先自己自由学习。。
+<br>
+<!--PS: 其实真正很有想法&&很能完成想法&&很能写论文的老师也是极少数，不同领域、同一领域的不同方向也可能相差很大:)-->
+
+<h2 id="section4">4. 其他问题</h2>
+<h3 id="section4.1">4.1 招生标准</h3>
+<ul>
+  <li>喜欢编程, 对以上某个研究方向有兴趣, 或者只是对编译器、定理证明器或各种代码分析工具的原理感兴趣；不要求有相关的项目/比赛/科研经历.
+  </li>
+  <li>加分项: 编程能力强(如有较复杂软件的编程经历); 数理能力强(如在数学/算法竞赛中表现出色); 对科研有理想和抱负
+  </li>
+</ul>
+
+<h2 id="section5">5. 结语</h2>
+
+欢迎邮件联系(pyaoaa@zju.edu.cn)/微信私聊/面谈，谢谢!
+
+</body>
+</html>
+
