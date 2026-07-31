@@ -16,75 +16,33 @@
         async src="//gc.zgo.at/count.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="description" content="homepage">
-    <link rel="stylesheet" type="text/css" href="
-    style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peisen Yao · Zhejiang University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="auto.js"></script>
   </head>
   <body>
     <div class="content">
-      <table align=center cellpadding=35>
-        <tr>
-          <td>
-            <img src="figs/cat.jpeg" width="150" alt="Photo" onmouseover="this.src='figs/cat2.png'" onmouseout="this.src='figs/cat.jpeg'">
-          </td>
-          <td>
-            <H2>Yao Peisen</H2>Assistant Professor (ZJU 100 Young Professor) <br>
-            <a href="https://icsr.zju.edu.cn/">School of Cyber Science and Technology</a>
-            <br>
-            <a href="http://www.cs.zju.edu.cn/csen/">College of Computer Science and Technology</a>
-            <br>
-            <a href="http://www.cs.zju.edu.cn/csen/">Zhejiang University</a>
-            <br>
-            <br> Office: Room 311, Tower B06, ZJU-Hangzhou Global Scientific and Technological Innovation Center
-            <br> Office*: Room 216, Shaw Business Administration Building, Yuquan Campus, Zhejiang University
-            <br> Email: pyaoaa@zju.edu.cn
-            <br> Official homepage at ZJU: <a href="https://person.zju.edu.cn/pyao">https://person.zju.edu.cn/pyao</a>
-            <br>
-            <br>
-          </td>
-        </tr>
-      </table>
-      <hr>
-      <center> [<a href="#publication">
-          <big>
-            <b>Publications</b>
-          </big>
-        </a>]
-        [<a href="#awards">
-          <big>
-            <b>Awards</b>
-          </big>
-        </a>]
-        [<a href="#software">
-          <big>
-            <b>Software</b>
-          </big>
-        </a>]
-        [<a href="#service">
-          <big>
-            <b>Service</b>
-          </big>
-        </a>]
-        [<a href="#teaching">
-          <big>
-            <b>Teaching</b>
-          </big>
-        </a>]
-        [<a href="html/students.html">
-          <big>
-            <b>Students</b>
-          </big>
-        </a>]
-        [<a href="#misc">
-          <big>
-            <b>Misc</b>
-          </big>
-        </a>]
-      </center>
-
-      <hr noShade size=2.5>
-      <a name="news"></a>
-      <h3>News</h3>
+      <header class="hero">
+        <img class="profile-photo" src="figs/cat.jpeg" alt="Peisen Yao" onmouseover="this.src='figs/cat2.png'" onmouseout="this.src='figs/cat.jpeg'">
+        <div class="hero-copy">
+          <p class="eyebrow">Zhejiang University</p>
+          <h1>Peisen Yao</h1>
+          <p class="role">Assistant Professor · ZJU 100 Young Professor</p>
+          <p class="affiliations"><a href="https://icsr.zju.edu.cn/">School of Cyber Science and Technology</a><br>
+            <a href="http://www.cs.zju.edu.cn/csen/">College of Computer Science and Technology</a></p>
+          <div class="contact-links">
+            <a href="mailto:pyaoaa@zju.edu.cn">Email</a>
+            <a href="https://person.zju.edu.cn/pyao">ZJU Profile</a>
+          </div>
+          <p class="office">Office: Room 311, Tower B06, ZJU-Hangzhou Global Scientific and Technological Innovation Center<br>
+            Office*: Room 216, Shaw Business Administration Building, Yuquan Campus</p>
+        </div>
+      </header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#news">News</a><a href="#research">Research</a><a href="#publication">Publications</a><a href="#awards">Awards</a><a href="#software">Software</a><a href="#service">Service</a><a href="#teaching">Teaching</a><a href="html/students.html">Students</a><a href="#misc">Misc</a>
+      </nav>
+      <h3 id="news">News</h3>
       <ul>
         <li><img src="figs/new.gif" alt="news">
           <a style="color:#FF0000">I am looking for self-motivated students!</a> Please read <a href="html/note-to-prospective-students.html">this</a> if you are interested in working with me (e.g., for Ph.D., Master, SRTP, and FYP).
@@ -106,13 +64,13 @@
         </li>
 
       </ul>
-      <hr noShade size=2.5>
-      <h3>Research Interests</h3>
+      <hr>
+      <h3 id="research">Research Interests</h3>
       I am broadly interested in  programming languages, software engineering, and cybersecurity, focusing on techniques that make software fast, reliable, and secure. <br> <br>
 
 Selected projects and research themes (current and former):
 <ul>
-    <li>
+    <li class="research-theme">
         Program Analysis and Verification<br>
         <ul>
             <li>
@@ -125,7 +83,7 @@ Selected projects and research themes (current and former):
             <li>
                 Alias analysis:
                 [<a href="https://arxiv.org/abs/2602.01720">SPLASH/ISSTA'26 Demo</a>]
-                [<a href="">ASE'26</a>]
+                [<span class="unlinked">ASE'26</span>]
                 [<a href="./files/PLDI24.pdf">PLDI'24</a>]
                 [<a href="./files/ISSTA24.pdf">ISSTA'24</a> <img src="figs/award.gif" width="18" alt=""/>]
                 [<a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>]
@@ -157,7 +115,7 @@ Selected projects and research themes (current and former):
         </ul>
     </li>
 
-        <li>
+        <li class="research-theme">
         Program Synthesis and Optimization<br>
         <ul>
 
@@ -176,7 +134,7 @@ Selected projects and research themes (current and former):
         </ul>
     </li>
 
-    <li>
+    <li class="research-theme">
         Logic and Automated Reasoning<br>
         <ul>
             <li>
@@ -201,9 +159,8 @@ Selected projects and research themes (current and former):
 
 </ul>
 
-      <hr noShade size=2.5>
-      <a name="manuscripts"></a>
-      <h3>Manuscripts / Working Papers</h3>
+      <hr>
+      <h3 id="manuscripts">Manuscripts / Working Papers</h3>
       <ul>
 
         <li>
@@ -228,23 +185,22 @@ Selected projects and research themes (current and former):
 
       </ul>
 
-      <hr noShade size=2.5>
-      <a name="publication"></a>
-      <h3>Selected Publications</h3>
+      <hr>
+      <h3 id="publication">Selected Publications</h3>
       <ul>
         <!--
         <li>
-          <a href="">[TOSEM 2026] Effective Fuzzing-Based Prototype Pollution Detection via Forced Execution and Template Synthesis.</a>
+          <span class="unlinked">[TOSEM 2026] Effective Fuzzing-Based Prototype Pollution Detection via Forced Execution and Template Synthesis.</span>
           <br>Dezhen Kong, Peisen Yao, Jiakun Liu, and Lingfeng Bao.
           <br>ACM Transactions on Software Engineering and Methodology.
         </li>
       -->
         <li>
-          <a href="">[SPLASH/ISSTA'26 Demo] Phoenix: A Modular and Versatile Framework for C/C++ Pointer Analysis.</a>
+          <span class="unlinked">[SPLASH/ISSTA'26 Demo] Phoenix: A Modular and Versatile Framework for C/C++ Pointer Analysis.</span>
           <br>Peisen Yao*, Zinan Gu, and Qingkai Shi.
           <br>Tool Demonstration Track, Joint Conference of ISSTA and SPLASH (SPLASH/ISSTA 2026)
         <li>
-          [<a href="">ASE 2026</a>] SIMD-Accelerated Sparse Bit-Vectors for Pointer Analysis.
+          [<span class="unlinked">ASE 2026</span>] SIMD-Accelerated Sparse Bit-Vectors for Pointer Analysis.
           <br>Zhaoyang Tan, Peisen Yao*, and Kui Ren.
           <br>The 41st IEEE/ACM International Conference on Automated Software Engineering.
         </li>
@@ -383,7 +339,7 @@ Selected projects and research themes (current and former):
           <a style="color:#FF0000">Google Research Paper Rewards.</a>
         </li>
         <li>
-          <a href="">PhD Thesis: Solidifying and Scaling SMT-Based Program Analysis, 2022, HKUST.</a> <br>
+          <span class="unlinked">PhD Thesis: Solidifying and Scaling SMT-Based Program Analysis, 2022, HKUST.</span> <br>
 
           Honorable Mention in the CSE Best Dissertation Award, HKUST.
         </li>
@@ -430,9 +386,8 @@ Selected projects and research themes (current and former):
 
       <!--
       <p id="footnote-1">* means corresponding author.</p> -->
-      <hr noShade size=2.5>
-      <a name="awards"></a>
-      <h3>
+      <hr>
+      <h3 id="awards">
         <strong>Honors & Awards</strong>
       </h3>
       <ul>
@@ -461,24 +416,23 @@ Selected projects and research themes (current and former):
         <li>Technical Excellence Award, Unique Hackday
         </li>
       </ul>
-      <hr noShade size=2.5>
-      <a name="software"></a>
-      <h3>Software</h3>
+      <hr>
+      <h3 id="software">Software</h3>
 
       <ul>
-          <li>Current Projects
-            <ul>
+          <li><span class="project-group-title">Current Projects</span>
+            <ul class="project-list">
              <li>
               <p class="justified-text">
-                <a href="https://github.com/ZJU-PL/lotus">lotus</a> is a program analysis and verification framework built on top of LLVM, CUDD, WALI, Z3, and Crab</a> (<a href="">SPLASH/ISSTA'26 Demo</a>,
-                <a href="./files/CAV26.pdf">CAV'26</a>, <a href="">ASE'26</a>, 
-                <a href="https://dl.acm.org/doi/10.1145/3795879">TOSEM'26a</a>, <a href="./files/ISSTA25.pdf">ISSTA'25</a>, <a href="./files/SP24Titan.pdf">S&P'24</a>, <a href="./files/SECURITY23LockPick.pdf">USENIX Security'23</a>, <a href="">TSE'24</a>, <a href="./files/OOPSLA22-FLARE.pdf">OOPSLA'22</a>)
+                <a href="https://github.com/ZJU-PL/lotus">lotus</a> is a program analysis and verification framework built on top of LLVM, CUDD, WALI, Z3, and Crab (<span class="unlinked">SPLASH/ISSTA'26 Demo</span>,
+                <a href="./files/CAV26.pdf">CAV'26</a>, <span class="unlinked">ASE'26</span>,
+                <a href="https://dl.acm.org/doi/10.1145/3795879">TOSEM'26a</a>, <a href="./files/ISSTA25.pdf">ISSTA'25</a>, <a href="./files/SP24Titan.pdf">S&amp;P'24</a>, <a href="./files/SECURITY23LockPick.pdf">USENIX Security'23</a>, <span class="unlinked">TSE'24</span>, <a href="./files/OOPSLA22-FLARE.pdf">OOPSLA'22</a>)
               </p>
             </li>
 
             <li>
               <p class="justified-text">
-              <a href="https://github.com/ZJU-PL/aria">aria</a> is a library for automated reasoning and program verification. (<a href="">ICSE'24</a>, <a href="">ICSE'23</a>, <a href="">ASE'23</a>) It is also available on PyPI — try <code>pip install pyaria</code>!
+              <a href="https://github.com/ZJU-PL/aria">aria</a> is a library for automated reasoning and program verification. (<span class="unlinked">ICSE'24</span>, <span class="unlinked">ICSE'23</span>, <span class="unlinked">ASE'23</span>) It is also available on PyPI — try <code>pip install pyaria</code>!
               </p>
             </li>
             <!--
@@ -508,13 +462,14 @@ Selected projects and research themes (current and former):
 
           </ul>
         </li>
-        <li>Former Projects
-            <ul>
+        <li><span class="project-group-title">Former Projects</span>
+            <ul class="project-list">
             <li>
               <p class="justified-text">
-                <a href="https://www.sourcebrella.com/">Pinpoint</a> is an SMT-based, industrial-strength static analysis framework (<a href="">PLDI'24</a>, <a href="https://arxiv.org/pdf/2305.04316.pdf">ECOOP'23</a>, <a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>, <a href="./files/SECURITY23LockPick.pdf">USENIX Security'23</a>, <a href="./files/OOPSLA22Cres.pdf">OOPSLA'22b</a>
+                <a href="https://www.sourcebrella.com/">Pinpoint</a> is an SMT-based, industrial-strength static analysis framework (<span class="unlinked">PLDI'24</span>, <a href="https://arxiv.org/pdf/2305.04316.pdf">ECOOP'23</a>, <a href="./files/TOSEMAnchor.pdf">TOSEM'23</a>, <a href="./files/SECURITY23LockPick.pdf">USENIX Security'23</a>, <a href="./files/OOPSLA22Cres.pdf">OOPSLA'22b</a>
                 <img src="figs/award.gif" width="18" alt="">, <a href="./files/OOPSLA22-FLARE.pdf">OOPSLA'22a</a>, <a href="./files/ICSE22Wit.pdf">ICSE'22</a>, <a href="./files/ASE21TransCode.pdf">ASE'21</a>, <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21b</a>, <a href="https://dl.acm.org/doi/10.1145/3453483.3454099">PLDI'21a</a>...)
                 <br>
+              </p>
               <ul>
                 <li>Pinpoint has found <a href="https://fusion-scan.github.io/"><span style="color:#FF0000">hundreds of bugs</span></a> in many mature and fundamental open-source projects, including Linux Kernel, FreeBSD, Firefox, HBase, OpenSSL, PostgreSQL, MySQL, Memcached, Redis, FFmpeg, Apache HTTPd, Git, Python, Tmux, Vim, and many others
                 </li>
@@ -524,29 +479,29 @@ Selected projects and research themes (current and former):
             </li>
             <li>
               <p class="justified-text">
-                <a href="">Pangolin</a> is a fuzzer for C/C++ source code and binaries (Pangolin <a href="files/HybridFuzz-Preprint.pdf">S&P'20</a>, Beacon <a href="files/HybridFuzz-Preprint.pdf">S&P'22</a>, BeliefFuzz <a href="">TDSC'23</a>, Titan <a href="./files/SP24Titan.pdf">S&P'24</a>)
+                <span class="unlinked">Pangolin</span> is a fuzzer for C/C++ source code and binaries (Pangolin <a href="files/HybridFuzz-Preprint.pdf">S&amp;P'20</a>, Beacon <a href="files/HybridFuzz-Preprint.pdf">S&amp;P'22</a>, BeliefFuzz <span class="unlinked">TDSC'23</span>, Titan <a href="./files/SP24Titan.pdf">S&amp;P'24</a>)
+              </p>
               <ul>
                 <li>A partial of of detected vulnerabilities in open-source projects can be found <a href="https://outstanding-hydrogen-2d1.notion.site/Trophies-aef45e1245a64528bd8ec111b475e03b">here</a>
                 </li>
                 <li>Our work has been successfully deployed in the Huawei tool-chain and detected more than <span style="color:#FF0000">1000+ bugs</span>! We have thus received the Huawei Distinguished Collaborator 2021 award
                 </li>
               </ul>
-              </p>
             </li>
             <li>
               <p class="justified-text">
-              <a href="https://github.com/rainoftime/smtfuzz">smtfuzz</a> is a fuzzer for SMT solvers (<a href="">SAS'25</a>, <a href="https://dl.acm.org/doi/abs/10.1145/3468264.3468540">ESEC/FSE'21</a>, <a href="https://dl.acm.org/doi/10.1145/3460319.3464803">ISSTA'21</a>)
+              <a href="https://github.com/rainoftime/smtfuzz">smtfuzz</a> is a fuzzer for SMT solvers (<span class="unlinked">SAS'25</span>, <a href="https://dl.acm.org/doi/abs/10.1145/3468264.3468540">ESEC/FSE'21</a>, <a href="https://dl.acm.org/doi/10.1145/3460319.3464803">ISSTA'21</a>)
+            </p>
             <ul>
               <li>Smtfuzz has found <a href="https://smtfuzz.github.io/"><span style="color:#FF0000">1000+ bugs</span></a> in several state-of-the-art SMT solvers and first-order theorem provers, such as Z3, CVC5, Yices2, STP, Boolector, MathSAT5, SMTInterpol, OpenSMT, SMT-RAT, DReal, SPASS, and Vampire
               </li>
               <li>You may try a simplified implementation of the random formula generator by "pip install smtfuzz"
               </li>
             </ul>
-            </p>
           </li>
             <li>
               <p class="justified-text">
-                <a href="https://github.com/EqDAC/EqDACTool">EqDAC</a> is an equivalence checker for verifying data constraint equivalence </a>(<a href="./files/ICSE23EqDAC.pdf">ICSE'23</a>)
+                <a href="https://github.com/EqDAC/EqDACTool">EqDAC</a> is an equivalence checker for verifying data constraint equivalence (<a href="./files/ICSE23EqDAC.pdf">ICSE'23</a>)
               </p>
               <ul>
                 <li>EqDAC has been deployed in Ant Group, a global FinTech company with 1 billion active users
@@ -556,26 +511,22 @@ Selected projects and research themes (current and former):
           </ul>
 
       </ul>
-      <hr noShade size=2.5>
-      <a name="service"></a>
-      <h3>Service</h3>
+      <hr>
+      <h3 id="service">Service</h3>
       <ul>
-        <li>
+        <li class="service-group">
           Chair/Co-chair/Organizer
-          <p class="justified-text"></p>
             <ul>
              <li>CCF ChinaSoft'26 约束求解技术与应用论坛 </li>
              <li>FM Meets AI长三角系列活动（杭州站）</li>
-             <li>CCF ChinaSoft'25 软件分析与软件安全新技术论坛 </li>
-             <li>CCF ChinaSoft'23 优秀博士生论坛</li>
+            <li>CCF ChinaSoft'25 软件分析与软件安全新技术论坛 </li>
+            <li>CCF ChinaSoft'23 优秀博士生论坛</li>
             </ul>
-          </p>
         </li>
-        <li>
+        <li class="service-group">
           Technical Program Committee
-          <p class="justified-text"></p>
           <ul>
-            <li>POPL: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (2025)  (first PC from ZJU)
+            <li>POPL: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (2025)  (first PC from ZJU)</li>
             <li>PLDI: ACM SIGPLAN Conference on Programming Language Design and Implementation (2026, 2023) (first PC from ZJU)</li>
             <li>OOPSLA: ACM SIGPLAN Conference on Objected Oriented Programming, Systems, Languages, and Application (2025) (first PC from ZJU)</li>
             <li>FSE: ACM International Conference on the Foundations of Software Engineering (2027)</li>
@@ -590,20 +541,16 @@ Selected projects and research themes (current and former):
             <li>CCF ChinaSoft (2025, 2024, 2023)</li>
             <li>National Conference of Theoretical Computer Science (2026, 2025)</li>
           </ul>
-           </p>
         </li>
-        <li>
+        <li class="service-group">
           Reviewer Committee Member
-          <p class="justified-text"></p>
             <ul>
               <li>ACM TOSEM: ACM Transactions on Software Engineering and Methodology (Jan 2026 – Dec 2027)</li>
             </ul>
-          </p>
         </li>
 
-        <li>
+        <li class="service-group">
           Journal Reviewer
-          <p class="justified-text">
            <ul>
             <li>ACM TOPLAS: ACM Transactions on Programming Languages and Systems</li>
             <li>ACM TOSEM: ACM Transactions on Software Engineering and Methodology</li>
@@ -615,7 +562,6 @@ Selected projects and research themes (current and former):
             <li>IEEE TR: IEEE Transactions on Reliability</li>
             <li>电子学报，软件学报，计算机学报</li>
            </ul>
-          </p>
         </li>
 
         <li>
@@ -628,11 +574,9 @@ Selected projects and research themes (current and former):
           External Reviewer/Sub-reviewer/Co-reviewer: OOPSLA'26, ATVA'22, ISSRE'21, ESEC/FSE'19, ISSTA'19, ASE'18, VMCAI'17
         </li>
       </ul>
-      </ul>
 
-    <hr noShade size=2.5>
-      <a name="teaching"></a>
-      <h3>Teaching</h3>
+    <hr>
+      <h3 id="teaching">Teaching</h3>
       <ul>
         <li>
           <a href="teaching/ppl.html">Principles of Programming Languages (Spring 27), UG Course, ZJU</a>
@@ -655,9 +599,8 @@ Selected projects and research themes (current and former):
       </ul>
 
 
-      <hr noShade size=2.5>
-      <a name="misc"></a>
-      <h3>Misc</h3>
+      <hr>
+      <h3 id="misc">Misc</h3>
       <ul>
         <li>
           <a href="http://www.cs.wisc.edu/wpis/talks/WritingResearchPapers.pptx">Tips on writing a research paper</a> by Thomas Reps [<a href="https://www.pldi21.org/prerecorded_plmw.2.html">video</a>]
@@ -688,10 +631,7 @@ Selected projects and research themes (current and former):
         </li>
 
       </ul>
-    </div>
-    <a name="talks"></a>
-
-    <h3>
+    <h3 id="talks">
       <strong>Invited Talks</strong>
     </h3>
     <ul>
@@ -747,7 +687,8 @@ Selected projects and research themes (current and former):
         Scaling and Solidifying SMT-based Program Analysis, ShanghaiTech University
       </li>
     </ul>
-    <hr noShade size=2.5>
-    <a name="xxx"></a> Visitors: <span id="busuanzi_value_site_pv"></span>
+    <hr>
+    <footer>Visitors: <span id="busuanzi_value_site_pv"></span></footer>
+    </div>
   </body>
 </html>
