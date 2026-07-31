@@ -37,6 +37,7 @@ h1, h2, h3, dt, th { color: var(--ink); font-weight: 700; }
 h1 { margin: 0; font-size: clamp(1.5rem, 2.6vw, 1.9rem); line-height: 1.15; letter-spacing: -.02em; }
 h1 span { color: var(--muted); font-size: .53em; font-weight: 500; letter-spacing: 0; margin-left: .25em; white-space: nowrap; }
 h3 { margin: 2.3rem 0 .85rem; font-size: 1.35rem; letter-spacing: -.01em; }
+h3[id] { scroll-margin-top: 4.5rem; }
 h3::after { content: ""; display: block; width: 2.2rem; height: 3px; margin-top: .38rem; background: #c23d32; border-radius: 99px; }
 
 .hero { display: flex; align-items: center; gap: 32px; padding: 34px; background: linear-gradient(125deg, #edf4fa, #f8fbfd 68%, #fff); border: 1px solid #dce8f2; border-radius: 14px; }
