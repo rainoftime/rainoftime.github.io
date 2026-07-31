@@ -70,10 +70,10 @@ li > ul { margin-top: .35rem; }
 .research-theme > ul li, .service-group > ul li { font-weight: 400; }
 code { padding: .1rem .32rem; color: #9b3024; background: #fff3ef; border-radius: 4px; font-size: .87em; }
 
-#news + h3 + ul { padding: 1rem 1.1rem 1rem 2.25rem; background: #fbfcfe; border: 1px solid #e5ebf0; border-radius: 10px; }
-#news + h3 + ul li:first-child { color: #5f241e; font-weight: 500; }
-#news + h3 + ul img { margin-right: .25rem; }
-#news + h3 + ul li:nth-child(n + 3) img { display: none; }
+#news + ul { padding: 1rem 1.1rem 1rem 2.25rem; background: #fbfcfe; border: 1px solid #e5ebf0; border-radius: 10px; }
+#news + ul li:first-child { color: #5f241e; font-weight: 500; }
+#news + ul img { margin-right: .25rem; }
+#news + ul li:nth-child(n + 3) img { display: none; }
 .justified-text { text-align: justify; text-justify: inter-ideograph; margin-right: 3mm; }
 img { vertical-align: middle; padding: 0; border-width: 0; }
 footer { color: var(--muted); font-size: .84rem; padding-top: .5rem; }
