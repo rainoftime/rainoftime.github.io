@@ -69,7 +69,7 @@ li > ul { margin-top: .35rem; }
 .research-theme, .service-group { font-weight: 700; }
 .research-theme > ul, .service-group > ul { margin-top: .2rem; margin-bottom: .25rem; }
 .research-theme > ul li, .service-group > ul li { font-weight: 400; }
-code { padding: .1rem .32rem; color: #9b3024; background: #fff3ef; border-radius: 4px; }
+code { padding: .1rem .32rem; font-size: .875em; color: #9b3024; background: #fff3ef; border-radius: 4px; }
 
 #news + ul { padding: 1rem 1.1rem 1rem 2.25rem; background: #fbfcfe; border: 1px solid #e5ebf0; border-radius: 10px; }
 #news + ul li:first-child { color: #5f241e; font-weight: 500; }
