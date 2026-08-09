@@ -127,36 +127,93 @@ li > ul {
     font-weight: 400;
 }
 
-/* Retain the current navigation bar while restoring the rest of the legacy theme. */
+/* A restrained, text-first navigation inspired by classic academic homepages. */
 .site-nav {
     position: sticky;
     top: 0;
     z-index: 10;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: .25rem .45rem;
-    margin: 0;
-    padding: 11px 4px;
-    background: rgba(255, 255, 255, .94);
+    gap: .25rem .4rem;
+    margin: .5rem 0 1rem;
+    padding: .45rem .25rem;
+    background: rgba(255, 255, 255, .96);
     border-bottom: 1px solid #d9e2ec;
     backdrop-filter: blur(8px);
 }
 
 .site-nav a {
-    padding: .22rem .5rem;
-    color: #667085;
+    color: DarkSlateBlue;
+    font-family: Arial, "Noto Sans SC", sans-serif;
+    font-size: 1.06rem;
     font-weight: 700;
     text-decoration: none;
 }
 
-.site-nav a:hover {
-    color: #174a7c;
-    background: #edf4fa;
-    border-radius: 5px;
+.site-nav a::before {
+    content: "[";
+    margin-right: .12rem;
 }
 
+.site-nav a::after {
+    content: "]";
+    margin-left: .12rem;
+}
+
+.site-nav a:hover {
+    color: DarkSlateBlue;
+    text-decoration: underline;
+}
+
+/* Leave one desktop navigation-bar height above linked section headings. */
 h3[id] {
     scroll-margin-top: 4.5rem;
+}
+
+/* The profile uses a two-column table on larger screens.  Stack it on phones so
+   the table's desktop cell padding does not leave the contact details cramped. */
+@media (max-width: 600px) {
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .profile-intro,
+    .profile-intro tbody,
+    .profile-intro tr,
+    .profile-intro td {
+        display: block;
+        width: 100%;
+    }
+
+    .profile-intro {
+        border-collapse: collapse;
+    }
+
+    .profile-intro td {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .profile-intro td:first-child {
+        padding: 1.25rem 0 .75rem;
+        text-align: center;
+    }
+
+    .profile-intro td:last-child {
+        padding-bottom: 1.25rem;
+    }
+
+    .profile-photo {
+        width: 128px;
+        height: 128px;
+    }
+
+    /* The sticky navigation can wrap over several rows on narrow screens. */
+    h3[id] {
+        scroll-margin-top: 8rem;
+    }
 }
 
 .cve-grid {
