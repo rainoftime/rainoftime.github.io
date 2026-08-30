@@ -75,6 +75,12 @@ img {
     margin-right: 3mm;
 }
 
+hr {
+    border: none;
+    border-top: 3px solid #d9e2ec;
+    margin: 1.5rem 0;
+}
+
 li, .item {
     margin-bottom: .3em;
 }
@@ -146,7 +152,7 @@ li > ul {
 .site-nav a {
     color: DarkSlateBlue;
     font-family: Arial, "Noto Sans SC", sans-serif;
-    font-size: 1.06rem;
+    font-size: 1.12rem;
     font-weight: 700;
     text-decoration: none;
 }
